@@ -10,15 +10,15 @@ gem 'jbuilder',   '2.9.1'
 gem 'bootsnap',   '1.4.5', require: false
 
 group :development, :test do
-  gem 'sqlite3',  '1.4.1'
-  gem 'byebug',   '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'sqlite3', '1.4.1'
+  gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
-  gem 'web-console',            '4.0.1'
-  gem 'listen',                 '3.1.5'
-  gem 'spring',                 '2.1.0'
-  gem 'spring-watcher-listen',  '2.0.1'
+  gem 'web-console',           '4.0.1'
+  gem 'listen',                '3.1.5'
+  gem 'spring',                '2.1.0'
+  gem 'spring-watcher-listen', '2.0.1'
 end
 
 group :test do
@@ -28,8 +28,9 @@ group :test do
 end
 
 group :production do
-gem 'pg', '1.1.4'
+  gem 'pg', '1.1.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+# Uncomment the following line if you're running Rails on a native Windows system:
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
